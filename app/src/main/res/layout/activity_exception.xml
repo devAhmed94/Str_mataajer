@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@android:color/white"
+  android:gravity="center"
+  android:orientation="vertical"
+  tools:context=".presentation.exception.ExceptionActivity">
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_exception" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:gravity="center"
+    android:text="@string/exception_msg"
+    android:textColor="@color/sonicSilver"
+    android:textSize="@dimen/_13ssp" />
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btnRestart"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:onClick="onClick"
+    android:text="@string/exception_restart" />
+</androidx.appcompat.widget.LinearLayoutCompat>

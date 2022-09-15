@@ -1,0 +1,30 @@
+apply plugin: 'com.github.ben-manes.versions'
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+        gradlePluginPortal()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.0'
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.google.firebase:perf-plugin:1.4.1'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.41.0'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.8.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

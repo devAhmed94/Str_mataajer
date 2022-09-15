@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "31676828619",
+    "firebase_url": "https://alattar-4c259.firebaseio.com",
+    "project_id": "alattar-4c259",
+    "storage_bucket": "alattar-4c259.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31676828619:android:e88545f4102d12ed9c044e",
+        "android_client_info": {
+          "package_name": "com.app.mataajer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31676828619-njioalbl7mao54ivhgilr4v7r7kpoe8d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.mataajer",
+            "certificate_hash": "bff88b5fdc874cbc8c0712d0231ea14f69dce3fe"
+          }
+        },
+        {
+          "client_id": "31676828619-irj1v27qpd53oecmfnksqqada0gkmbr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK44JX7B0I0FVHU6FCX178yxQkUlBLKqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31676828619-irj1v27qpd53oecmfnksqqada0gkmbr1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+<resources>
+
+  <string name="app_name">نموذج</string>
+
+  <!-- Global start -->
+  <string name="global_cant_connect">لا يمكن الإتصال</string>
+  <string name="global_tab_to_retry">اضغط لإعادة المحاولة</string>
+  <!-- Global end -->
+
+  <!-- Network start -->
+  <string name="network_check_connection">تعذر الوصول للخادم.\nبرجاء التحقق من إتصالك ثم حاول مرة أخري.</string>
+  <string name="network_server_unreachable">حدث خطأ ما.\nبرجاء المحاولة مرة أخري.</string>
+  <string name="network_unexpected_response">عذراَ، إستجابة غير متوقعة من الخادم.</string>
+  <string name="network_service_error">كود الخطأ: %1$d\nرسالة الخطأ: %2$s</string>
+  <!-- Network end -->
+
+  <!-- BaseActivity start -->
+  <string name="base_retry">إعادة المحاولة</string>
+  <string name="base_restart_msg">جاهز للتحديث؟</string>
+  <string name="base_restart">إعادة التشغيل</string>
+  <!-- BaseActivity end -->
+
+  <!-- ExceptionActivity start -->
+  <string name="exception_msg">حدث خطأ غير متوقع.\nعذراً للإزعاج</string>
+  <string name="exception_restart">إعادة تشغيل التطبيق</string>
+  <!-- ExceptionActivity end -->
+
+</resources>

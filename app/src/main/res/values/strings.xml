@@ -1,0 +1,28 @@
+<resources>
+
+  <string name="app_name">Model</string>
+
+  <!-- Global start -->
+  <string name="global_cant_connect">Can\'t Connect</string>
+  <string name="global_tab_to_retry">Tap to retry</string>
+  <!-- Global end -->
+
+  <!-- Network start -->
+  <string name="network_check_connection">Couldn\'t reach server.\nPlease check your connection and try again.</string>
+  <string name="network_server_unreachable">Something went wrong.\nPlease try again.</string>
+  <string name="network_unexpected_response">Sorry. unexpected response from server.</string>
+  <string name="network_service_error">Error code: %1$d\nError message: %2$s</string>
+  <!-- Network end -->
+
+  <!-- BaseActivity start -->
+  <string name="base_retry">Retry</string>
+  <string name="base_restart_msg">Ready to update?</string>
+  <string name="base_restart">Restart</string>
+  <!-- BaseActivity end -->
+
+  <!-- ExceptionActivity start -->
+  <string name="exception_msg">An unexpected error occurred.\nSorry for the inconvenience</string>
+  <string name="exception_restart">Restart App</string>
+  <!-- ExceptionActivity end -->
+
+</resources>

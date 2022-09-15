@@ -1,0 +1,90 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.firebase.firebase-perf'
+}
+
+apply from: '../dependencies.gradle'
+
+android {
+
+    compileSdkVersion 31
+    buildToolsVersion '32.0.0'
+
+    defaultConfig {
+        applicationId "com.app.mataajer"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        resConfigs "ar", "en" // Remove unused alternative resources
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false // Shrink code by removing unused methods
+            shrinkResources false // Remove all the resources that are not used in the project
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            debuggable false
+            minifyEnabled true // Shrink code by removing unused methods
+            shrinkResources true // Remove all the resources that are not used in the project
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures { viewBinding true }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+        javaParameters = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+    }
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        jvmTarget = "1.8"
+        freeCompilerArgs += [
+                "-Xjvm-default=all",
+                // Don’t generate not-null assertions for arguments of platform types
+                '-Xno-call-assertions',
+                // Don’t generate not-null assertion for extension receiver arguments of platform types
+                '-Xno-receiver-assertions',
+                // Don’t generate not-null assertions on parameters of methods accessible from Java
+                '-Xno-param-assertions'
+        ]
+    }
+}
+
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:28.3.0')
+    implementation appDependency.values()
+    kapt annotationDependency.values()
+}

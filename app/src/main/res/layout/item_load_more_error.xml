@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/llError"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="@dimen/_10sdp"
+  android:gravity="center"
+  android:orientation="vertical">
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_sad" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/global_cant_connect"
+    android:textColor="@android:color/black"
+    android:textSize="@dimen/_12sdp" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableStart="@drawable/ic_refresh"
+    android:drawablePadding="@dimen/_5sdp"
+    android:text="@string/global_tab_to_retry"
+    android:textSize="@dimen/_10sdp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
