@@ -4,8 +4,8 @@ import androidx.lifecycle.liveData
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.app.mataajer.R
-import com.app.mataajer.core.BaseRsm
-import com.app.mataajer.data.application.getStringByLocal
+import com.app.mataajer.application.app.getStringByLocal
+import com.app.mataajer.application.core.BaseRsm
 import com.app.mataajer.data.network.Resource.Companion.failure
 import com.app.mataajer.data.network.Resource.Companion.loading
 import com.app.mataajer.data.network.Resource.Companion.success

@@ -9,9 +9,9 @@ import androidx.core.app.TaskStackBuilder
 import com.google.firebase.messaging.FirebaseMessaging
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
-import com.app.mataajer.data.preferences.fcmToken
-import com.app.mataajer.data.preferences.notificationsAllowed
-import com.app.mataajer.data.utils.extensions.getBitmap
+import com.app.mataajer.application.preferences.fcmToken
+import com.app.mataajer.application.preferences.notificationsAllowed
+import com.app.mataajer.application.utils.extensions.getBitmap
 import com.app.mataajer.presentation.splash.SplashActivity
 import org.jetbrains.anko.intentFor
 

@@ -1,4 +1,4 @@
-package com.app.mataajer.data.utils
+package com.app.mataajer.application.utils
 
 import android.annotation.SuppressLint
 import android.content.Context

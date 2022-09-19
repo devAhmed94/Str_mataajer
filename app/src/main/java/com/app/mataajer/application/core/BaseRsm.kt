@@ -1,4 +1,4 @@
-package com.app.mataajer.core
+package com.app.mataajer.application.core
 
 import com.google.gson.annotations.SerializedName
 

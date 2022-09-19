@@ -1,7 +1,7 @@
 package com.app.mataajer.presentation.exception
 
 import android.view.View
-import com.app.mataajer.core.BaseActivity
+import com.app.mataajer.application.core.BaseActivity
 import com.app.mataajer.databinding.ActivityExceptionBinding
 import com.app.mataajer.presentation.splash.SplashActivity
 import org.jetbrains.anko.intentFor

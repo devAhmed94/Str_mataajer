@@ -1,4 +1,4 @@
-package com.app.mataajer.data.utils
+package com.app.mataajer.application.utils
 
 import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.module.AppGlideModule

@@ -23,6 +23,10 @@
   <!-- ExceptionActivity start -->
   <string name="exception_msg">An unexpected error occurred.\nSorry for the inconvenience</string>
   <string name="exception_restart">Restart App</string>
+  <string name="ahmed">ahmed</string>
+  <string name="ali">ali</string>
   <!-- ExceptionActivity end -->
+
+
 
 </resources>

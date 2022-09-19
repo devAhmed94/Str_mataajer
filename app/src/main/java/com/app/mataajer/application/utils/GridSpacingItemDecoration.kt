@@ -1,10 +1,10 @@
-package com.app.mataajer.data.utils
+package com.app.mataajer.application.utils
 
 import android.graphics.Rect
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
-import com.app.mataajer.data.utils.LocaleHelper.locale
+import com.app.mataajer.application.utils.LocaleHelper.locale
 
 /**
  * Ahmed Ali Ebaid

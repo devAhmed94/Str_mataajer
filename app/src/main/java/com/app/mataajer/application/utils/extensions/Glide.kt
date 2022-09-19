@@ -1,4 +1,4 @@
-package com.app.mataajer.data.utils.extensions
+package com.app.mataajer.application.utils.extensions
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -14,7 +14,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.target.Target
 import com.bumptech.glide.request.transition.Transition
-import com.app.mataajer.data.utils.GlideApp
+import com.app.mataajer.application.utils.GlideApp
 
 /**
  * Ahmed Ali Ebaid

@@ -1,6 +1,6 @@
 package com.app.mataajer.data.network
 
-import com.app.mataajer.core.BaseRsm
+import com.app.mataajer.application.core.BaseRsm
 import com.app.mataajer.domain.remote.Post
 import retrofit2.Response
 import retrofit2.http.GET
@@ -12,6 +12,6 @@ import retrofit2.http.GET
  */
 interface ApiService {
 
-  @GET("posts")
+  @GET("api/mobile/Labs/GetOnlyPatientLabOrdersByPagination")
   suspend fun getPosts(): Response<BaseRsm<Post>>
 }

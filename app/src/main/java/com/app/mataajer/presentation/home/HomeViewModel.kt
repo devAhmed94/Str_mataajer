@@ -2,9 +2,10 @@ package com.app.mataajer.presentation.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.app.mataajer.data.db.entities.Post
+import com.app.mataajer.data.db.entities.PostLocal
 import com.app.mataajer.data.network.loadData
 import com.app.mataajer.data.repo.Repository
+import com.app.mataajer.data.repo.RepositoryImp
 import kotlinx.coroutines.launch
 
 
@@ -17,7 +18,7 @@ class HomeViewModel(private val repo: Repository) : ViewModel() {
 
     fun getPosts() = loadData { repo.getPosts() }
 
-    fun savePost(post: Post)=viewModelScope.launch{
-        repo.insertPost(post)
+    fun savePost(post: PostLocal)=viewModelScope.launch{
+        repo.insertToLocal(post)
     }
 }

@@ -1,4 +1,4 @@
-package com.app.mataajer.core
+package com.app.mataajer.application.core
 
 import android.content.Context
 import android.os.Bundle
@@ -8,11 +8,12 @@ import androidx.annotation.DrawableRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
 import com.app.mataajer.R
-import com.app.mataajer.data.utils.LocaleHelper
-import com.app.mataajer.data.utils.extensions.gone
-import com.app.mataajer.data.utils.extensions.hideKeyboard
-import com.app.mataajer.data.utils.extensions.load
-import com.app.mataajer.data.utils.extensions.visible
+import com.app.mataajer.application.preferences.darkMode
+import com.app.mataajer.application.utils.LocaleHelper
+import com.app.mataajer.application.utils.extensions.gone
+import com.app.mataajer.application.utils.extensions.hideKeyboard
+import com.app.mataajer.application.utils.extensions.load
+import com.app.mataajer.application.utils.extensions.visible
 import com.app.mataajer.databinding.ActivityBaseBinding
 import com.app.mataajer.presentation.loading.LoadingDialog
 import java.lang.reflect.ParameterizedType
@@ -34,9 +35,10 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
 
   @Suppress("DEPRECATION")
   override fun onCreate(savedInstanceState: Bundle?) {
+    if (darkMode) setTheme(R.style.DakModeTheme) else setTheme(R.style.AppTheme)
     super.onCreate(savedInstanceState)
     // Set the status bar to dark-semi-transparent
-    window.setFlags(FLAG_TRANSLUCENT_STATUS, FLAG_TRANSLUCENT_STATUS)
+    /*window.setFlags(FLAG_TRANSLUCENT_STATUS, FLAG_TRANSLUCENT_STATUS)*/
     setContent()
   }
 

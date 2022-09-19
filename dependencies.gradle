@@ -5,64 +5,80 @@ ext {
     lifecycle_version = '2.5.0-alpha01'
     navigation = '2.5.0-alpha01'
     room_version = "2.3.0"
+    appCenterSdkVersion = '4.3.1'
+    koin_version =  "3.2.1"
 
     appDependency = [
             // Support libs
-            cardview         : "androidx.cardview:cardview:1.0.0",
-            preference       : "androidx.preference:preference-ktx:1.1.1",
-            recyclerview     : "androidx.recyclerview:recyclerview:1.2.1",
-            appcompat        : "androidx.appcompat:appcompat:1.4.1",
-            material         : "com.google.android.material:material:1.6.0-alpha02",
-            vectorDrawable   : "androidx.vectordrawable:vectordrawable-animated:1.1.0",
-            constraintLayout : "androidx.constraintlayout:constraintlayout:2.1.3",
+            cardview           : "androidx.cardview:cardview:1.0.0",
+            preference         : "androidx.preference:preference-ktx:1.1.1",
+            recyclerview       : "androidx.recyclerview:recyclerview:1.2.1",
+            appcompat          : "androidx.appcompat:appcompat:1.4.1",
+            material           : "com.google.android.material:material:1.6.0-alpha02",
+            vectorDrawable     : "androidx.vectordrawable:vectordrawable-animated:1.1.0",
+            constraintLayout   : "androidx.constraintlayout:constraintlayout:2.1.3",
 
             // Kotlin
-            anko             : "org.jetbrains.anko:anko:0.10.8",
-            ktx              : "androidx.core:core-ktx:1.8.0-alpha03",
-            activityKtx      : "androidx.activity:activity-ktx:1.5.0-alpha01",
-            fragmentKtx      : "androidx.fragment:fragment-ktx:1.5.0-alpha01",
-            kotlin           : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10",
-            coroutines       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0-RC3",
-            coroutinesAndroid: "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0",
+            anko               : "org.jetbrains.anko:anko:0.10.8",
+            ktx                : "androidx.core:core-ktx:1.8.0-alpha03",
+            activityKtx        : "androidx.activity:activity-ktx:1.5.0-alpha01",
+            fragmentKtx        : "androidx.fragment:fragment-ktx:1.5.0-alpha01",
+            kotlin             : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10",
+            coroutines         : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0-RC3",
+            coroutinesAndroid  : "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0",
 
             // Architecture Components
-            navigationUi     : "androidx.navigation:navigation-ui-ktx:$navigation",
-            livedata         : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle",
-            viewmodel        : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle",
-            navFragment      : "androidx.navigation:navigation-fragment-ktx:$navigation",
+            navigationUi       : "androidx.navigation:navigation-ui-ktx:$navigation",
+            livedata           : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle",
+            viewmodel          : "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle",
+            navFragment        : "androidx.navigation:navigation-fragment-ktx:$navigation",
 
 
             // Google play services
-            playCore         : "com.google.android.play:core:1.10.3", // App update
+            playCore           : "com.google.android.play:core:1.10.3", // App update
 
             // FireBase
-            performance      : "com.google.firebase:firebase-perf-ktx",
-            messaging        : "com.google.firebase:firebase-messaging",
-            appIndexing      : "com.google.firebase:firebase-appindexing",
-            analytics        : "com.google.firebase:firebase-analytics-ktx",
-            crashlytics      : "com.google.firebase:firebase-crashlytics-ktx",
+            performance        : "com.google.firebase:firebase-perf-ktx",
+            messaging          : "com.google.firebase:firebase-messaging",
+            appIndexing        : "com.google.firebase:firebase-appindexing",
+            analytics          : "com.google.firebase:firebase-analytics-ktx",
+            crashlytics        : "com.google.firebase:firebase-crashlytics-ktx",
 
             // Rest client
-            retrofit         : "com.squareup.retrofit2:retrofit:$retrofit",
-            converterGson    : "com.squareup.retrofit2:converter-gson:$retrofit",
-            logging          : "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2",
+            retrofit           : "com.squareup.retrofit2:retrofit:$retrofit",
+            converterGson      : "com.squareup.retrofit2:converter-gson:$retrofit",
+            logging            : "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2",
 
             // Room
-            room             : "androidx.room:room-ktx:$room_version",
-            roomAndroid      : "androidx.room:room-compiler:$room_version",
+            room               : "androidx.room:room-ktx:$room_version",
+            roomRun            : "androidx.room:room-runtime:$room_version",
+
 
             // UI`s
-            avLoading        : "com.wang.avi:library:2.1.3",
-            waveLoading      : "com.race604.waveloading:library:1.1.1",
+            avLoading          : "com.wang.avi:library:2.1.3",
+            waveLoading        : "com.race604.waveloading:library:1.1.1",
 
             // Utils
-            sdp              : "com.intuit.sdp:sdp-android:1.0.6",
-            ssp              : "com.intuit.ssp:ssp-android:1.0.6",
-            glide            : "com.github.bumptech.glide:glide:$glide",
-            glideTrans       : "jp.wasabeef:glide-transformations:4.3.0",
+            sdp                : "com.intuit.sdp:sdp-android:1.0.6",
+            ssp                : "com.intuit.ssp:ssp-android:1.0.6",
+            glide              : "com.github.bumptech.glide:glide:$glide",
+            glideTrans         : "jp.wasabeef:glide-transformations:4.3.0",
+
+            // app center
+            appCenter_analytics: "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}",
+            appCenter_crashes  : "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}",
+
+
+            // Koin
+            insertKoin         : "io.insert-koin:koin-android:$koin_version",
+            compatKoin         : "io.insert-koin:koin-android-compat:$koin_version",
+            workmanagerKoin    : "io.insert-koin:koin-androidx-workmanager:$koin_version",
+            navigationKoin     : "io.insert-koin:koin-androidx-navigation:$koin_version"
     ]
 
     annotationDependency = [
-            glide: "com.github.bumptech.glide:compiler:$glide"
+            glide      : "com.github.bumptech.glide:compiler:$glide",
+
+            roomAndroid: "androidx.room:room-compiler:$room_version",
     ]
 }

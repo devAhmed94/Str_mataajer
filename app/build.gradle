@@ -25,6 +25,7 @@ android {
         vectorDrawables.useSupportLibrary = true
     }
 
+
     buildTypes {
         debug {
             debuggable true
@@ -65,13 +66,15 @@ android {
         exclude 'META-INF/ASL2.0'
         exclude("META-INF/*.kotlin_module")
     }
+
+
 }
 
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
     kotlinOptions {
         jvmTarget = "1.8"
         freeCompilerArgs += [
-                "-Xjvm-default=all",
+                '-Xjvm-default=all',
                 // Don’t generate not-null assertions for arguments of platform types
                 '-Xno-call-assertions',
                 // Don’t generate not-null assertion for extension receiver arguments of platform types

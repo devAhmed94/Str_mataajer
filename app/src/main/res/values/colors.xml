@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <color name="colorPrimary">#6200EE</color>
-  <color name="colorPrimaryDark">#3700B3</color>
-  <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#006EB6</color>
+    <color name="colorAccent">#00AAA7</color>
 
-  <color name="black">#000000</color>
-  <color name="nickle">#6F6F6F</color>
-  <color name="sonicSilver">#757575</color>
-  <color name="x11GRAY">#BDBDBD</color>
-  <color name="silverSand">#C3C3C3</color>
-  <color name="platinum">#E5E5E5</color>
-  <color name="cultured">#F3F3F3</color>
-  <color name="white">#FFFFFF</color>
-  <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="nickle">#6F6F6F</color>
+    <color name="sonicSilver">#757575</color>
+    <color name="x11GRAY">#BDBDBD</color>
+    <color name="silverSand">#C3C3C3</color>
+    <color name="platinum">#E5E5E5</color>
+    <color name="cultured">#F3F3F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="deepCerulean">#006EB6</color>
+    <color name="persianGreen">#00AAA7</color>
+
+    <!--dark color-->
+    <color name="mineShaft">#212121</color>
+    <color name="doveGray">#707070</color>
+    <color name="silverChalice">#A7A7A7</color>
+
 
 </resources>

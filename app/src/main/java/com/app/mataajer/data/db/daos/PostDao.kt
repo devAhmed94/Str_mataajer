@@ -4,7 +4,7 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
-import com.app.mataajer.data.db.entities.Post
+import com.app.mataajer.data.db.entities.PostLocal
 
 
 /**
@@ -17,11 +17,11 @@ import com.app.mataajer.data.db.entities.Post
 interface PostDao {
 
     @Insert
-    fun insertAll( post: Post)
+    fun insertAll( post: PostLocal)
 
     @Query("SELECT * FROM post_table ")
-    fun getAll(): List<Post>
+    fun getAll(): List<PostLocal>
 
     @Delete
-    fun delete(post: Post)
+    fun delete(post: PostLocal)
 }

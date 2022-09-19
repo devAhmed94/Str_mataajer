@@ -10,7 +10,7 @@ import androidx.room.PrimaryKey
  * 11/09/2022
  */
 @Entity(tableName = "post_table")
-data class Post(var title: String, var body: String) {
+data class PostLocal(var title: String, var body: String) {
     @PrimaryKey(autoGenerate = true)
     var id: Int? = null
 }

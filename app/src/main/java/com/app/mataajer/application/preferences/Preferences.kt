@@ -1,8 +1,8 @@
-package com.app.mataajer.data.preferences
+package com.app.mataajer.application.preferences
 
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener
 import androidx.preference.PreferenceManager.getDefaultSharedPreferences
-import com.app.mataajer.data.application.getContext
+import com.app.mataajer.application.app.getContext
 
 /**
  * Ahmed Ali Ebaid
@@ -12,6 +12,7 @@ import com.app.mataajer.data.application.getContext
 
 private const val FCM_TOKEN = "FcmToken"
 private const val SHOW_NOTIFICATIONS = "ShowPushNotifications"
+private const val  DARK_MODE = "DarkMode"
 
 private val pref by lazy { getDefaultSharedPreferences(getContext()) }
 
@@ -22,6 +23,11 @@ var fcmToken: String
 var notificationsAllowed: Boolean
   get() = pref.getBoolean(SHOW_NOTIFICATIONS, true)
   set(value) = pref.edit().putBoolean(SHOW_NOTIFICATIONS, value).apply()
+
+var darkMode: Boolean
+  get() = pref.getBoolean(DARK_MODE, false)
+  set(value) = pref.edit().putBoolean(DARK_MODE, value).apply()
+
 
 /*var user: User?
   get() = Gson().fromJson(pref.getString(USER, ""), User::class.java)

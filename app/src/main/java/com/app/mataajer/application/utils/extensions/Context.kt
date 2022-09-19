@@ -1,4 +1,4 @@
-package com.app.mataajer.data.utils.extensions
+package com.app.mataajer.application.utils.extensions
 
 import android.content.Context
 import android.content.Context.INPUT_METHOD_SERVICE

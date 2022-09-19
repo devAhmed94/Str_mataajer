@@ -1,6 +1,6 @@
 package com.app.mataajer.data.network
 
-import com.app.mataajer.core.BaseRsm
+import com.app.mataajer.application.core.BaseRsm
 
 /**
  * Ahmed Ali Ebaid

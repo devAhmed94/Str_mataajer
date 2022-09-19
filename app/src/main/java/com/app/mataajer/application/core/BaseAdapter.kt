@@ -1,4 +1,4 @@
-package com.app.mataajer.core
+package com.app.mataajer.application.core
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import androidx.viewbinding.ViewBinding
-import com.app.mataajer.data.utils.EndlessScrollListener
+import com.app.mataajer.application.utils.EndlessScrollListener
 import com.app.mataajer.databinding.ItemLoadMoreBinding
 import com.app.mataajer.databinding.ItemLoadMoreErrorBinding
 import java.lang.reflect.ParameterizedType
